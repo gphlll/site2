@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ELEGANT - салон красоты</title>
+    <link rel="icon" href="image/icon.png" type="image/png">
+    <link rel="stylesheet" href="css/main_style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+  </head>
+</head>
+<body style="background-color: #F1ECDF;">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+    <header>
+        <div class="container">
+            <nav>
+                <ul class="button">
+                    <li><a class="first_button" href="index.html">Главная</a></li>
+                    <li><a class="second_button" href="#feedbackForm" id="scrollToFormBtn">Записаться</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="title">
+            <p>ELEGANT</p>
+    </div>
+    <div class="title_two">
+        <p>салон красоты</p>
+    </div>
+    <div class="image">
+        <img src="image/photo.png" alt="Фото салона">
+    </div>
+    <div class="text">
+        <p>Салон красоты "Элегант" — это место, где вы можете расслабиться и насладиться профессиональным уходом за собой. Наши мастера с многолетним опытом работы помогут вам выглядеть безупречно.</p>
+    </div>
+    <div class="heading">
+        <p>НАШИ УСЛУГИ</p>
+    </div>
+    <div class="buttons-container">
+        <a href="haircut.html" class="button-36 haircut-bg" role="button">Парикмахерские услуги</a>
+        <a href="manicure.html" class="button-36 manicure-bg" role="button">Маникюр и педикюр</a>
+        <a href="massage.html" class="button-36 massage-bg" role="button">Массаж</a>
+    </div>
+    <div class="buttons-container">
+        <a href="cosmetology.html" class="button-37 cosmetology-bg" role="button">Косметология</a>
+        <a href="solarium.html" class="button-37 solarium-bg" role="button">Солярий</a>
+    </div>
+    <div class="feedback-form" id="feedbackForm">
+        <h3>Записаться на прием</h3>
+        <form id="appointmentForm">
+            <div class="form-group">
+                <label for="name">Ваше имя:</label>
+                <input type="text" id="name" class="form-control" required>
+                <div id="nameError" class="error-message"></div>
+            </div>
+            
+            <div class="form-group">
+                <label for="email">Ваш email:</label>
+                <input type="email" id="email" class="form-control" required>
+                <div id="emailError" class="error-message"></div>
+            </div>
+            
+            <div class="form-group">
+                <label for="comment">Комментарий или желаемая услуга:</label>
+                <textarea id="comment" class="form-control" required></textarea>
+                <div id="commentError" class="error-message"></div>
+            </div>
+            
+            <button type="submit" class="submit-btn">Отправить заявку</button>
+        </form>
+        
+        <div id="formResult" class="success-message"></div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/feedback.js"></script>
+</body>
+</html>
